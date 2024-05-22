@@ -57,6 +57,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   margin: 0;
+  border-bottom: 4px solid #002abb;
 }
 
 .heading_container.heading_center {
@@ -69,6 +70,11 @@ body {
 h1,
 h2 {
   font-family: "octin sports", sans-serif;
+}
+
+h3 {
+  font-family: "octin sports", sans-serif;
+  font-weight:600;
 }
 
 /*header section*/
@@ -349,13 +355,25 @@ a:focus {
   color: #ffffff;
 }
 
-.slider_section .img-box img {
+.slider_section .img-box{
+  /* min-width: 100%;
+  min-height: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+  /* height: auto;
+  width: auto; */
+}
+
+/* .slider_section .img-box img {
   min-width: 100%;
   min-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .slider_section .img-box::before {
   content: "";
@@ -824,7 +842,7 @@ a:focus {
 
 .contact_section .form_container button:hover {
   background-color: transparent;
-  color: #002abb;
+  color: #5c7cf0;
 }
 
 .contact_section .subscribe-box h3 {
@@ -894,7 +912,7 @@ a:focus {
 
 .contact_section .subscribe-box form button:hover {
   background-color: transparent;
-  color: #002abb;
+  color: #5c7cf0;
 }
 
 .info_section {
@@ -928,7 +946,7 @@ a:focus {
 }
 
 .info_section .info_contact a:hover:hover {
-  color: #002abb;
+  color: #5c7cf0;
 }
 
 .info_section .social_box {
@@ -959,8 +977,8 @@ a:focus {
 }
 
 .info_section .social_box a:hover {
-  color: #002abb;
-  border-color: #002abb;
+  color: #5c7cf0;
+  border-color: #5c7cf0;
 }
 
 /* footer section*/
@@ -978,4 +996,45 @@ a:focus {
 .footer_section p a {
   color: inherit;
 }
+
+/* whatsapp button */
+.whatsapp-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #25D366;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: xx-large;
+  margin-right: 0px;
+  /* font-weight: bold; */
+  transition: all 0.3s ease-in-out;
+}
+
+.whatsapp-button:hover {
+  background-color: #1AA759;
+  /* color: white;  */
+}
+
+.whatsapp-button i.fa-whatsapp {
+  /* margin-right: 10px; */
+}
+
+.price_box_detail {
+  height: 200px
+}
+
+.price-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 15px, 5px;
+}
+
 /*# sourceMappingURL=style.css.map */
