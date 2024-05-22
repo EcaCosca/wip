@@ -69,6 +69,8 @@ body {
 
 h1,
 h2 {
+  margin-top: 5px;
+  margin-bottom: 2.5px;
   font-family: "octin sports", sans-serif;
 }
 
